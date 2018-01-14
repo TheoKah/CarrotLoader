@@ -1,0 +1,11 @@
+plugins {
+    id 'org.spongepowered.plugin' version '0.8.1'
+}
+
+group = 'com.carrot'
+version = '0.1-S5.1-MC1.10.2'
+description = 'Chunk Loading manager for Sponge'
+
+dependencies {
+    compile 'org.spongepowered:spongeapi:5.1.0'
+}
