@@ -3,9 +3,10 @@ plugins {
 }
 
 group = 'com.carrot'
-version = '0.1-S5.1-MC1.10.2'
+version = '0.1-S7.0-MC1.12.2'
 description = 'Chunk Loading manager for Sponge'
 
 dependencies {
-    compile 'org.spongepowered:spongeapi:5.1.0'
+    compile 'org.spongepowered:spongeapi:7.0.0'
+    compile 'com.google.code.gson:gson:2.8.1'
 }

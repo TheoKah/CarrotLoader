@@ -177,6 +177,6 @@ public class CarrotLoader {
 
 	public static Cause getCause()
 	{
-		return Cause.source(Sponge.getPluginManager().fromInstance(CarrotLoader.getInstance()).get()).build();
+		return Sponge.getCauseStackManager().getCurrentCause();
 	}
 }
