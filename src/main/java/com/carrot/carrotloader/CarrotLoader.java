@@ -28,6 +28,7 @@ import com.carrot.carrotloader.command.LoaderSeeExecutor;
 import com.carrot.carrotloader.command.LoaderUnLoadAllExecutor;
 import com.carrot.carrotloader.command.LoaderUnLoadExecutor;
 import com.carrot.carrotloader.command.LoaderWikiExecutor;
+import com.carrot.carrotloader.command.PlayerNameElement;
 import com.carrot.carrotloader.listener.PlayerConnexionListener;
 import com.flowpowered.math.vector.Vector3i;
 import com.google.common.collect.ImmutableList;
@@ -113,7 +114,7 @@ public class CarrotLoader {
 						.put("take", "take")
 						.put("set", "set")
 						.build()),
-						GenericArguments.user(Text.of("player")),
+						new PlayerNameElement(Text.of("player")),
 						GenericArguments.integer(Text.of("amount")))
 				.executor(new LoaderManagerExecutor())
 				.build();
