@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.carrot'
-version = '0.1-S7.0-MC1.12.2'
+version = '0.2-S7.0-MC1.12.2'
 description = 'Chunk Loading manager for Sponge'
 
 dependencies {
