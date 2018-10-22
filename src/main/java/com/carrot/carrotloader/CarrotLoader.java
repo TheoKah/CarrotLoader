@@ -70,7 +70,9 @@ public class CarrotLoader {
 
 		CommandSpec loaderLoad = CommandSpec.builder()
 				.description(Text.of("Add a chunk to your list of loaded chunks"))
-				.arguments(GenericArguments.optional(GenericArguments.user(Text.of("player"))))
+				.arguments(
+						GenericArguments.optional(GenericArguments.location(Text.of("location"))),
+						GenericArguments.optional(GenericArguments.user(Text.of("player"))))
 				.executor(new LoaderLoadExecutor())
 				.build();
 
